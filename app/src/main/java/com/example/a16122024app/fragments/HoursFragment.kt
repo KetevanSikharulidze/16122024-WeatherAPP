@@ -58,7 +58,7 @@ class HoursFragment : Fragment() {
 
     private fun initRcView() = with(binding){
         RVHours.layoutManager = LinearLayoutManager(activity)
-        adapter = WeatherAdapter()
+        adapter = WeatherAdapter(null)
         RVHours.adapter = adapter
         val list = listOf(
             WeatherModel(
